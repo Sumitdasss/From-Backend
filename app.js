@@ -6,10 +6,9 @@ const app =express()
 app.use(
   cors({
     origin: [
-      "https://from-bay-zeta.vercel.app/",
+      "https://from-bay-zeta.vercel.app",
       "http://localhost:3000",
     ],
-
     methods: [
       "GET",
       "POST",
@@ -18,7 +17,6 @@ app.use(
       "DELETE",
       "OPTIONS",
     ],
-
     allowedHeaders: [
       "Content-Type",
       "Authorization",
